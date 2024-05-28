@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="x-icon" href="../images/9fcb7e577f16414a98e00a9a0eeaed2c.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant head method </title>
+    <link rel="stylesheet" href="../css/Constant_head.css">
+    <link rel="stylesheet" href="../css/mediaExperiments.css">
+</head>
+<body class="specific-body">
+    <header class="specific-header">
+        <div class="specific-title"><i><u><h2>COEFFICIENT OF PERMEABILITY USING CONSTANT HEAD PERMEAMETER</h2></u></i></div>
+    </header>
+    <ul class="specific-accordion">
+        <li>
+            <input type="checkbox" name="accordion" id="first_1">
+            <label for="first_1">Aim</label>
+            <div class="specific-content">
+                <p> To determine the coefficient of permeability of the given soil sample using constant head permeameter.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="second_1">
+            <label for="second_1">Apparatus</label>
+            <div class="specific-content">
+                <p> Permeameter constant head filter tank,specimen compaction equipments, balance, weights, stop watch,ruler etc.
+                    </p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="third_1">
+            <label for="third_1">Objective</label>
+            <div class="specific-content">
+                <p>To determine the coefficient of permeability of granular soils by constant head method and under laminar flow conditions of water. The method is suitable for disturbed granular soil containing less than 10% of soil passing 75 micron IS sieve, the type of materials used for construction of embankments and base courses under pavements.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="fourth_1">
+            <label for="fourth_1">Theory</label>
+            <div class="specific-content">
+                <p>Permeability is the rate of flow of water, under laminar conditions through unit cross-sectional area of porous medium, under unit hydraulic gradient and standard temperature conditions.<br></p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="fifth_1">
+            <label for="fifth_1">Procedure</label>
+            <div class="specific-content">
+                <p> 1. Connect the specimen through the top inlet to the constant head reservoir and bottom outlet shall be opened.<br>
+
+                    2. When steady state flow has been established, the quantity of flow for convenient time interval is collected and the same measured.</p>
+            </div>
+        </li>
+       
+    </ul>
+   <br><br><br><br><br><br><br><br><br><br>
+    <div>
+        <table id="table_1" class="specific-content-table" table border="5px">
+        <h1 class="observation-of-core">Observation and Tabulation</h1>
+        <div class="observation-data">
+           <tr>
+            <th>Mass of Empty mould = W1 =</th>
+             <td><input type="number"  id="w1_1"> kg</td> 
+            </tr>
+
+            <tr>
+                <th>Mass of Empty mould + soil = W2 =</th>
+                  <td><input type="number"  id="w2_1"> kg </td>
+                </tr>
+            <tr> 
+                <th>Mass of soil = W2-W1 =</th>
+                <td><input   id="w3_1"readonly type="number">cm2 </td>
+                </tr>
+                <tr> 
+                    <th>Length of the mould = l</th> 
+                    <td><input type="number"  id="l1_1"> cm</td>
+                </tr>
+                <tr>
+                    <th>Constant head = h =</th> 
+                    <td> <input type="number"  id="Constant"> cm 
+                   </tr>
+                    <tr>
+                         <th>Diameter of the mould = D =</th> 
+                         <td> <input type="number"  id="Diameter"> cm 
+                        </tr>
+                        <tr> 
+                            <th>Area of the mould = A =</th>
+                             <td><input   id="Area"readonly type="number">cm2 </td>
+                            </tr>
+                            
+                        <tr> 
+                             <th>Volume of the mould = V =</th>
+                            <td> <input   id="volume"readonly type="number"> cm3</td>
+                            </tr>
+                            <tr>
+                                  <th>Bulk density = μB =</th>
+                                  <td><input   id="bulk_density"readonly type="number"></td>
+            </tr> 
+            
+               </div>
+    <table id="table_1" class="specific-content-table" table border="5px">
+        <tr>
+            <th>Description</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>Q in ml </th>
+            <td><input id="Q1_1" type="number"> ml</td>
+            <td><input id="Q1_2" type="number"> ml</td>
+            <td><input id="Q1_3" type="number"> ml</td>
+        </tr>
+        <tr>
+            <th>Time taken in sec (t) </th>
+            <td><input id="t1_1" type="number"> sec</td>
+            <td><input id="t1_2" type="number"> sec</td>
+            <td><input id="t1_3" type="number"> sec</td>
+        </tr>
+        
+        
+        
+        <tr>
+            <th>K = ( Q x L )/ (h x a x t ) in cm/s</th>
+            <td><input id="result_K1_1" readonly type="number"> cm/s</td>
+            <td><input id="result_K1_2" readonly type="number"> cm/s</td>
+            <td><input id="result_K1_3" readonly type="number"> cm/s</td>
+        </tr>
+       
+        
+    </table>
+
+    <button type="button" onclick="calculateAllEquations()" class="specific-button">
+        <span class="specific-button__text">Calculate</span>
+        <span class="specific-button__icon">
+            <ion-icon name="calculator-outline"></ion-icon>
+        </span>
+    </button>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <div>
+        <table class="specific-results-table" table border="2px">
+            <tr>
+                <th><label for="average_result_1">Result:</label></th>
+                <td>
+                    <p>Constant head permeability of soil is = </p>
+                    <input type="text" id="average_result_1" readonly> cm/s
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function calculateAllEquations() {
+            calculateBulkDensity();
+            calculatePermeability(1);
+            calculatePermeability(2);
+            calculatePermeability(3);
+
+            const averageResult = calculateAverageResult();
+            document.getElementById('average_result_1').value = averageResult;
+        }
+
+        
+        function calculateBulkDensity() {
+            const w1 = parseFloat(document.getElementById('w1_1').value);
+            const w2 = parseFloat(document.getElementById('w2_1').value);
+            const w3 = parseFloat(document.getElementById('w3_1').value);
+            const D1 = parseFloat(document.getElementById('Diameter').value);
+        const H = parseFloat(document.getElementById(`Constant`).value);
+            const l1_1 = parseFloat(document.getElementById('l1_1').value);
+            const mass = w2-w1;
+            const Area = (3.142 * D1 * D1) / 4;
+             const volume = (3.142 * D1 * D1 * l1_1) / 4;
+            
+            
+            const bulk_density = (mass*1000) / volume;
+            document.getElementById('w3_1').value = mass.toFixed(4);
+            document.getElementById('Area').value = Area.toFixed(4);
+            
+            document.getElementById('volume').value = volume.toFixed(4);
+            document.getElementById('bulk_density').value = bulk_density.toFixed(4);
+        }
+        function calculatePermeability(trialNumber) {
+            const t = parseFloat(document.getElementById(`t1_${trialNumber}`).value);
+            const Q = parseFloat(document.getElementById(`Q1_${trialNumber}`).value);
+            const H = parseFloat(document.getElementById(`Constant`).value);
+            const L = parseFloat(document.getElementById(`l1_1`).value);
+            const Area = parseFloat(document.getElementById(`Area`).value);
+           
+            console.log(t,Q,H,L,Area);
+            const result_K1 = (Q * L) / (Area *H* t);
+            console.log(result_K1);
+
+           
+            document.getElementById(`result_K1_${trialNumber}`).value = result_K1.toFixed(5);
+        }
+
+        function calculateAverageResult() {
+            const result_1 = parseFloat(document.getElementById(`result_K1_1`).value);
+            const result_2 = parseFloat(document.getElementById(`result_K1_2`).value);
+            const result_3 = parseFloat(document.getElementById(`result_K1_3`).value);
+            const averageResult = (result_1 + result_2 + result_3) / 3;
+
+            return isNaN(averageResult) ? '' : averageResult.toFixed(5);
+        }
+        </script>
+</body>
+</html>

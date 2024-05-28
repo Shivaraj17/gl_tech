@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="x-icon" href="../images/9fcb7e577f16414a98e00a9a0eeaed2c.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>core Cutter method </title>
+    <link rel="stylesheet" href="../css/core_cutter_method.css">
+    <link rel="stylesheet" href="../css/mediaExperiments.css">
+</head>
+<body class="specific-body">
+    <header class="specific-header">
+        <button type="button" class="specific-btn"><a href="Experiments list.html">Experiments</a></button>
+        <div class="specific-title"><i><u><h2>DETERMINATION OF DRY DENSITY OF SOIL IN PLACE BY CORE CUTTER METHOD.</h2></u></i></div>
+    </header>
+    <ul class="specific-accordion">
+        <li>
+            <input type="checkbox" name="accordion" id="first_1">
+            <label for="first_1">Aim</label>
+            <div class="specific-content">
+                <p> To determine the in-situ bulk density of soil and hence dry density of soil.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="second_1">
+            <label for="second_1">Apparatus</label>
+            <div class="specific-content">
+                <p> Cylindrical core cutter of steel, steel dolly, steel rammer, pellete knife, steel nail, spade, straight edge, balance etc.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="third_1">
+            <label for="third_1">Objective</label>
+            <div class="specific-content">
+                <p>Density of soil is a very important physical property. This is useful for checking the degree of compaction in the field.lt is related to voids ratio, porosity.and other qualities which are helpful in the design of foundation. When we use soil as a structural material as in reservoir embankment, this property is very much essential.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="fourth_1">
+            <label for="fourth_1">Theory</label>
+            <div class="specific-content">
+                <p>The density of unit wt of soil mass is defined as its weight per unit volume.<br>
+
+                    The different types of densities are:<br>
+                    
+                    1. Bulk density.<br>
+                    
+                    2. Dry density.<br>
+                    
+                    3. Saturated density.<br>
+                    
+                    4. Submerged density.<br></p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="fifth_1">
+            <label for="fifth_1">Procedure</label>
+            <div class="specific-content">
+                <p> 1. Measure the inside dimensions of the core cutter and calculate its volume. Vcc<br>
+
+                    2. Weigh the core cutter to accurate to 1 g. (WI).<br>
+                    
+                    3. A flat area, approximately 300 mm sq of the soil to be tested is exposed and trimmed down to a level surface.<br>
+                    
+                    4. Put the dolly on top of the core cutter, and drive the assembly into the soil with the help of the rammer until the top of the dolly projects above 1.5 cm above the surface.<br>
+                    
+                    5. Remove the surrounding soil and allow some soil to project from the level end of the cutter and take out the assembly.<br>
+                    
+                    6. Using the straight edge, from the flat edge of the cutter, remove the dolly and trim flat the other end of the cutter.<br>
+                    
+                    7. Weigh the core cutter with full soil. (W2).<br>
+                    
+                    8. The bulk density of soil (W2-W1)/ V g/cc.<br>
+                    
+                    9. Weigh the empty container (W3) g.<br>
+                    
+                    10. Take some representative soil sample in the container and weigh it. (W4) g.<br>
+                    
+                    11. Keep the container and wet soil in the oven at 105+/-5 degree C 12. Weigh the container and dry soil accurately (WS). for 24 hours,<br>
+                    
+                    Water content, w(W4-WS)/(WS-W3) x 100%.<br>
+                    
+                    13. The dry density of the soil (μd) = (μB)/(1+w) g/cc.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="sixth_1">
+            <label for="sixth_1">Correction and Temperature</label>
+            <div class="specific-content">
+                <p> The specific gravity is calculated for room temp at 27 deg C.If the room temperature is different then the following correction is applied.<br>
+
+                    G=G X K<br>
+                    
+                    K=relative density of water at room temp/ relative density of water @27 deg C.<br> G' corrected specific gravity at 27 deg C.<br>
+                    
+                    Specific gravity of water (GL) is taken as given in chart.</p>
+            </div>
+        </li>
+    </ul>
+    <div>
+        <table id="table_1" class="specific-content-table" table border="5px">
+        <h1 class="observation-of-core">Observation and Tabulation</h1>
+        <div class="observation-data">
+           <tr>
+            <th>Mass of Core-cutter = m1 =</th>
+             <td><input type="number"  id="m1"> g</td> 
+            </tr>
+
+            <tr>
+                <th>Mass of Core-cutter + soil = m2 =</th>
+                  <td><input type="number"  id="m2"> g</td>
+                </tr>
+            
+                <tr> 
+                    <th>Height = h</th> 
+                    <td><input type="number"  id="h1"> cm</td>
+                </tr>
+                    <tr>
+                         <th>Inside diameter of core cutter =</th> 
+                         <td> <input type="number"  id="d1"> cm</tr>
+
+                        <tr>
+                             <tr> 
+                            <th>Mass of wet soil = m2-m1 =</th>
+                             <td><input id="result_m2_m1" readonly type="number"  > g</td>
+                            </tr>
+
+                             <th>Volume = V =</th>
+                            <td> <input id="volume"readonly type="number"> g/cm3</td>
+                            </tr>
+                            <tr>
+                                  <th>Bulk density = μB =</th>
+                                  <td><input id="bulk_density"readonly type="number"> g/cc</td>
+            </tr> 
+            <table id="table_1" class="specific-content-table" table border="5px"> <tr>
+                <th>Bulk density = μB =</th>
+                <td><input type="number"  id="bulk_density_again"> %</td>
+</tr>
+<tr>
+    <th>Water content =</th>
+    <td><input type="number"  id="water_content"> g/cc</td>
+</tr></div>
+    <table id="table_1" class="specific-content-table" table border="5px">
+        <tr>
+            <th>Description</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>Steel Cup Number</th>
+            <td><input id="temp1" type="number"></td>
+            <td><input id="temp2" type="number"></td>
+            <td><input id="temp3" type="number"></td>
+        </tr>
+        <tr>
+            <th>Mass of Steel cup (W1)g</th>
+            <td><input id="w1_1" type="number"> g</td>
+            <td><input id="w1_2" type="number"> g</td>
+            <td><input id="w1_3" type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of Steel cup + Wet soil (W2)g</th>
+            <td><input id="w2_1" type="number"> g</td>
+            <td><input id="w2_2" type="number"> g</td>
+            <td><input id="w2_3" type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of Steel cup + Dry soil (W3)g</th>
+            <td><input id="w3_1" type="number"> g</td>
+            <td><input id="w3_2" type="number"> g</td>
+            <td><input id="w3_3" type="number"> g</td>
+        </tr>
+        
+        <tr>
+            <th>Mass of water Ww = (w2-w3)g</th>
+            <td><input id="result_w2_w3_1" readonly type="number"> g</td>
+            <td><input id="result_w2_w3_2" readonly type="number"> g</td>
+            <td><input id="result_w2_w3_3" readonly type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of Solids Ws = (w3-w1)g</th>
+            <td><input id="result_w3_w1_1" readonly type="number"> g</td>
+            <td><input id="result_w3_w1_2" readonly type="number"> g</td>
+            <td><input id="result_w3_w1_3" readonly type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Water Content w= (w2-w3/w3-w1)X100</th>
+            <td><input id="result_division_1" readonly type="number"> %</td>
+            <td><input id="result_division_2" readonly type="number"> %</td>
+            <td><input id="result_division_3" readonly type="number"> %</td>
+        </tr>
+    </table>
+
+    <button type="button" onclick="calculateAllEquations()" class="specific-button">
+        <span class="specific-button__text">Calculate</span>
+        <span class="specific-button__icon">
+            <ion-icon name="calculator-outline"></ion-icon>
+        </span>
+    </button>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <div>
+        <table class="specific-results-table" table border="2px">
+            <tr>
+                <th><label for="average_result_1">Result:</label></th>
+                <td>
+                    <p>The insitu bulk density of soil =</p>
+                    <input type="text" id="average_result_1" readonly> g/cc
+                </td>
+                <td>
+                    <p>Water content = </p>
+                    <input type="text" id="average_result_2" readonly> %
+                </td>
+                <td>
+                    <p>Dry density of soil = </p>
+                    <input type="text" id="average_result_3" readonly> g/cc
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function calculateAllEquations() {
+            calculateBulkDensity()
+    calculateEquations(1);
+    calculateEquations(2);
+    calculateEquations(3);
+    calculateDryDensity()
+    
+    
+    const averageResult = calculateAverageResult();
+    document.getElementById('average_result_2').value = averageResult;
+    
+    
+}
+function calculateBulkDensity() {
+    const m1 = parseFloat(document.getElementById(`m1`).value);
+    const m2 = parseFloat(document.getElementById(`m2`).value);
+    const d1 = parseFloat(document.getElementById(`d1`).value);
+    const h1 = parseFloat(document.getElementById(`h1`).value);
+    
+
+    if (isNaN(m1) || isNaN(m2) || isNaN(d1) || isNaN(h1) ) {
+        alert(`Trial ${trialNumber}: Please enter valid numeric values for m1, m2, d1, h1.`);
+        return;
+    }
+
+    const result_m2_m1 = m2 - m1;
+   
+    const volume = ((3.142*d1*d1*h1)/4);
+    const bulk_density = (result_m2_m1 / volume);
+    
+
+   
+
+
+    document.getElementById(`result_m2_m1`).value = result_m2_m1;
+    document.getElementById(`volume`).value = volume.toFixed(5);
+    document.getElementById(`bulk_density`).value = bulk_density.toFixed(5);
+    document.getElementById(`average_result_1`).value = bulk_density.toFixed(5);
+
+
+}
+function calculateEquations(trialNumber) {
+    const w1 = parseFloat(document.getElementById(`w1_${trialNumber}`).value);
+    const w2 = parseFloat(document.getElementById(`w2_${trialNumber}`).value);
+    const w3 = parseFloat(document.getElementById(`w3_${trialNumber}`).value);
+
+    if (isNaN(w1) || isNaN(w2) || isNaN(w3)) {
+        alert(`Trial ${trialNumber}: Please enter valid numeric values for w1, w2, and w3.`);
+        return;
+    }
+
+    const result_w3_w1 = w3 - w1;
+   
+    const result_w2_w3 = w2 - w3;
+    const result_division = ((w2 - w3)*100) / (w3 - w1);
+
+    document.getElementById(`result_w2_w3_${trialNumber}`).value = result_w2_w3.toFixed(5);
+    document.getElementById(`result_w3_w1_${trialNumber}`).value = result_w3_w1.toFixed(5);
+    document.getElementById(`result_division_${trialNumber}`).value = result_division.toFixed(5);
+}
+
+function calculateAverageResult() {
+    const result_1 = parseFloat(document.getElementById(`result_division_1`).value);
+    const result_2 = parseFloat(document.getElementById(`result_division_2`).value);
+    const result_3 = parseFloat(document.getElementById(`result_division_3`).value);
+
+    const averageResult = (result_1 + result_2 + result_3) / 3;
+
+    return isNaN(averageResult) ? '' : averageResult.toFixed(2);
+}
+function calculateDryDensity(){
+    const water = parseFloat(document.getElementById(`water_content`).value);
+    const bulk_density = parseFloat(document.getElementById(`bulk_density_again`).value);
+
+    const dry_density = 1.306+(bulk_density/ (1+water));
+    document.getElementById(`average_result_3`).value = dry_density.toFixed(5);
+}
+    </script>
+</body>
+</html>

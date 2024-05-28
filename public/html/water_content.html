@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="x-icon" href="../images/9fcb7e577f16414a98e00a9a0eeaed2c.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Content</title>
+    <link rel="stylesheet" href="../css/waterCnt.css">
+    <link rel="stylesheet" href="../css/mediaExperiments.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="title"><i><u><h2>DETERMINATION OF WATER CONTENT</h2></u></i></div>
+    </header>
+    <ul class="accordion">
+        <li>
+            <input type="checkbox" name="accordion" id="first">
+            <label for="first">Aim</label>
+            <div class="content">
+                <p>To determine the water content of the given sample of soil.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="second">
+            <label for="second">Apparatus</label>
+            <div class="content">
+                <p>Oven (110+/-5deg C), soil specimen, balance, weight box, desiccator, steel cup, spatula, etc.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="third">
+            <label for="third">Objective</label>
+            <div class="content">
+                <p>There is a definite relation between the weight of dry particles and the weight of water stored in the pores. Water content is one of the physical properties of soil, which plays an important role in soil mechanics. It leads us to determine the strength of the soil and, in turn, the bearing capacity. Hence, it is necessary to determine the same.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="fourth">
+            <label for="fourth">Theory</label>
+            <div class="content">
+                <p>Water content may be defined as the ratio of the weight of water to the weight of soil solids, expressed as a percentage and denoted by 'w'. Mathematically W = Ww/ Ws *100%. Weight of water / weight of soil solids * 100%. There are six methods to determine the water content.<br>1. Oven drying method (std. Method)<br>2. Sand bath method<br>3. Alcohol method<br>4. Infra red lamp torsion balance moisture meter method<br>5. Calcium carbide method<br>6. Pycnometer method.<br>Soil specimen: the soil specimen shall be representative of the soil mass. The size of the specimen selected depends on the quantity required for good representation, which is influenced by the gradation and maximum size of particles and on the accuracy of weighing.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="fifth">
+            <label for="fifth">Procedure</label>
+            <div class="content">
+                <p>1. Clean the container and lid and weigh it (WI).<br>2. Take the required quantity of soil specimen in the container, crumbled and placed loosely, and weigh it with the lid. (W2).<br>3. Then keep it in the oven with the lid removed, and maintain the temp. of the oven at 110 +/-5 deg C.<br>4. Dry the specimen in the oven for 24 hours.<br>5. Take out the container, replace the lid and cool it in a desiccator.<br>6. Record the final weight (W3.) of the container with the lid and dried soil sample.<br>The water content is calculated using the formula:<br>w = (W2 - W3)/(W3 - W1) * 100 %<br>where w = water content<br>WI = mass of container with the lid in g<br>W2 = mass of container with the lid and wet soil in g<br>W3 = mass of container with the lid and dry soil in g</p>
+            </div>
+        </li>
+    </ul>
+    
+    <table id="tabel" class="content-table" table border="5px">
+        <tr>
+            <th>Description</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>Container number</th>
+            <td><input id="cntnum1" type="number"></td>
+            <td><input id="cntnum2" type="number"></td>
+            <td><input id="cntnum3" type="number"></td>
+        </tr>
+        <tr>
+            <th>Mass of empty container (w1)g</th>
+            <td><input id="w1_1" type="number"> g</td>
+            <td><input id="w1_2" type="number"> g</td>
+            <td><input id="w1_3" type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of container + wet soil (w2)g</th>
+            <td><input id="w2_1" type="number"> g</td>
+            <td><input id="w2_2" type="number"> g</td>
+            <td><input id="w2_3" type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of container + dry soil(w3)g</th>
+            <td><input id="w3_1" type="number"> g</td>
+            <td><input id="w3_2" type="number"> g</td>
+            <td><input id="w3_3" type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of water Ww = (w2-w3)g</th>
+            <td><input id="result_w2_w3_1" readonly type="number"> g</td>
+            <td><input id="result_w2_w3_2" readonly type="number"> g</td>
+            <td><input id="result_w2_w3_3" readonly type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of Solids Ws = (w3-w1)g</th>
+            <td><input id="result_w3_w1_1" readonly type="number"> g</td>
+            <td><input id="result_w3_w1_2" readonly type="number"> g</td>
+            <td><input id="result_w3_w1_3" readonly type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Water Content w= (w2-w3/w3-w1)X100</th>
+            <td><input id="result_division_1" readonly type="number"> %</td>
+            <td><input id="result_division_2" readonly type="number"> %</td>
+            <td><input id="result_division_3" readonly type="number"> %</td>
+        </tr>
+    </table>
+
+    <button type="button" onclick="calculateAllEquations()" class="button">
+        <span class="button__text">Calculate</span>
+        <span class="button__icon">
+            <ion-icon name="calculator-outline"></ion-icon>
+        </span>
+    </button>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <div>
+        <table class="results-table" table border="2px">
+            <tr>
+                <th><label for="average_result">Result:</label></th>
+                <td>
+                    <p>The moisture content of the given sample is</p>
+                    <input type="text" id="average_result" readonly> %
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function calculateAllEquations() {
+    calculateEquations(1);
+    calculateEquations(2);
+    calculateEquations(3);
+
+    const averageResult = calculateAverageResult();
+    document.getElementById('average_result').value = averageResult;
+}
+
+function calculateEquations(trialNumber) {
+    const w1 = parseFloat(document.getElementById(`w1_${trialNumber}`).value);
+    const w2 = parseFloat(document.getElementById(`w2_${trialNumber}`).value);
+    const w3 = parseFloat(document.getElementById(`w3_${trialNumber}`).value);
+
+    if (isNaN(w1) || isNaN(w2) || isNaN(w3)) {
+        alert(`Trial ${trialNumber}: Please enter valid numeric values for w1, w2, and w3.`);
+        return;
+    }
+
+    const result_w2_w3 = w2 - w3;
+    const result_w3_w1 = w3 - w1;
+    const result_division = ((w2 - w3)*100) / (w3 - w1);
+
+    document.getElementById(`result_w2_w3_${trialNumber}`).value = result_w2_w3.toFixed(4);
+    document.getElementById(`result_w3_w1_${trialNumber}`).value = result_w3_w1.toFixed(4);
+    document.getElementById(`result_division_${trialNumber}`).value = result_division.toFixed(4);
+}
+
+function calculateAverageResult() {
+    const result_1 = parseFloat(document.getElementById('result_division_1').value);
+    const result_2 = parseFloat(document.getElementById('result_division_2').value);
+    const result_3 = parseFloat(document.getElementById('result_division_3').value);
+
+    const averageResult = (result_1 + result_2 + result_3) / 3;
+
+    return isNaN(averageResult) ? '' : averageResult.toFixed(2);
+}
+    </script>
+</body>
+</html>

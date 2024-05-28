@@ -1,0 +1,93 @@
+@media (max-width: 1442px) {
+    *{
+        margin: 0;
+        padding: 0;
+        transition: all .2s linear;
+    }
+    body {
+        height: 100vh;
+    }
+    header {
+        width: 100%;
+    }
+}
+
+  /* Styles for screens up to 1025px width */
+@media (max-width: 1025px) {
+    html{
+        font-size: 70%;
+    }
+    .button{
+        margin-top: 10px;
+        margin-left: 414px;
+    }
+}
+
+  /* Styles for screens up to 800px width */
+@media (max-width: 800px) {
+    html {
+      font-size: 80%;
+    }
+    body {
+      height: 100vh;
+    }
+    header {
+      width: 100%;
+    }
+    .accordion li{
+        width: 95%;
+        margin-left: 0%;
+    }
+    .button{
+        margin-left: 290px;
+    }
+    .specific-accordion li{
+        width: 95%;
+        margin-left: 0%;
+    }
+    .specific-button{
+        margin-left: 290px;
+    }
+  }
+
+@media (max-width : 652px){
+    html {
+        font-size: 80%;
+      }
+      body {
+        height: 100vh;
+      }
+      header {
+        width: 200%;
+      }
+      .accordion li{
+        width: 95%;
+        margin-left: 10%;
+    }
+    .title{
+        text-align: left;
+        margin-left: 50px;
+    }
+    .results-table{
+        margin-left: 167px;
+    }
+    .specific-accordion li{
+        width: 95%;
+        margin-left: 10%;
+    }
+    .specific-results-table{
+        margin-left: 167px;
+    }
+}
+@media (max-width : 310px){
+    html {
+        font-size: 80%;
+      }
+      body {
+        height: 100vh;
+      }
+      header {
+        width: 200%;
+      }
+
+}

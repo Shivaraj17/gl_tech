@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="x-icon" href="../images/9fcb7e577f16414a98e00a9a0eeaed2c.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specific Gravity of Coarse grained soil </title>
+    <link rel="stylesheet" href="../css/specific_gravity_coarse.css">
+    <link rel="stylesheet" href="../css/mediaExperiments.css">
+</head>
+<body class="specific-body">
+    <header class="specific-header">
+        <div class="specific-title"><i><u><h2>DETERMINATION OF SPECIFIC GRAVITY OF COARSE GRAINED SOIL</h2></u></i></div>
+    </header>
+    <ul class="specific-accordion">
+        <li>
+            <input type="checkbox" name="accordion" id="first_1">
+            <label for="first_1">Aim</label>
+            <div class="specific-content">
+                <p>To determine the specific gravity of coarse grained soil.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="second_1">
+            <label for="second_1">Apparatus</label>
+            <div class="specific-content">
+                <p> Pycnometer of about 900 ml capacity with conical cap, balance sensitive to Ig. glass rod, distilled water, wash bottle etc.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="third_1">
+            <label for="third_1">Objective</label>
+            <div class="specific-content">
+                <p>Specific gravity is one of the important properties of soil. Determination of specific gravity of a soil sample helps in knowing its degree of saturation, unit weight of soil solids etc. It is also used in computation of the results of several laboratory tests of soils. It is helpful in identification of soils.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="fourth_1">
+            <label for="fourth_1">Theory</label>
+            <div class="specific-content">
+                <p>The specific gravity of a soil is the ratio of weight of soil sample at a given room temperature to the weight of an equal volume of distilled water at the same temperature. It is the ratio of unit weight of soil solids to that of water. It is denoted by the letter 'G'.</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="fifth_1">
+            <label for="fifth_1">Procedure</label>
+            <div class="specific-content">
+                <p> 1. Clean the Pycnometer and dry it. Find the weight of the pycnometer(m1) along with its cap and washer accurate to 1 g.<br>
+
+                    2. Take about 200 g to 400 g of oven dried sample and put it in the pycnometer. Weigh the pycnometer along with the soil etc (m2).<br>
+                    
+                    3. Fill the pycnometer to half its height with distilled water and mix it thoroughly with glass rod. Add more water and stir it. Replace the screw top and fill the
+                    pycnometer flush with hole in the conical cap and weigh it (m3) after drying the pycnometer from outside.<br>
+                    
+                    4. Empty the pycnometer, clean it thoroughly and fill it distilled water, to the hole of the conical cap and weigh it (m4).<br> The specific gravity is calculated from the formula:<br><br>
+                    
+                    G=(m2-ml)/[(m4-ml)-(m3-m2)] GL</p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="sixth_1">
+            <label for="sixth_1">Correction and Temperature</label>
+            <div class="specific-content">
+                <p> The specific gravity is calculated for room temp at 27 deg C.If the room temperature is different then the following correction is applied.<br>
+
+                    G=G X K<br>
+                    
+                    K=relative density of water at room temp/ relative density of water @27 deg C.<br> G' corrected specific gravity at 27 deg C.<br>
+                    
+                    Specific gravity of water (GL) is taken as given in chart.</p>
+            </div>
+        </li>
+    </ul>
+  
+    <table id="table_1" class="specific-content-table" table border="5px">
+        <tr>
+            <th>Description</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>Temperature</th>
+            <td><input id="temp1" type="number"></td>
+            <td><input id="temp2" type="number"></td>
+            <td><input id="temp3" type="number"></td>
+        </tr>
+        <tr>
+            <th>Mass of pycnometer (m1)g</th>
+            <td><input id="m1_1" type="number"> g</td>
+            <td><input id="m1_2" type="number"> g</td>
+            <td><input id="m1_3" type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of pycnometer + soil (m2)g</th>
+            <td><input id="m2_1" type="number"> g</td>
+            <td><input id="m2_2" type="number"> g</td>
+            <td><input id="m2_3" type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of pycnometer + soil + water(m3)g</th>
+            <td><input id="m3_1" type="number"> g</td>
+            <td><input id="m3_2" type="number"> g</td>
+            <td><input id="m3_3" type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of pycnometer + distilled water (m4)g</th>
+            <td><input id="m4_1"  type="number"> g</td>
+            <td><input id="m4_2"  type="number"> g</td>
+            <td><input id="m4_3"  type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of Soil = (m2-m1)g</th>
+            <td><input id="result_m2_m1_1" readonly type="number"> g</td>
+            <td><input id="result_m2_m1_2" readonly type="number"> g</td>
+            <td><input id="result_m2_m1_3" readonly type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of distilled water = (m4-m1)g</th>
+            <td><input id="result_m4_m1_1" readonly type="number"> g</td>
+            <td><input id="result_m4_m1_2" readonly type="number"> g</td>
+            <td><input id="result_m4_m1_3" readonly type="number"> g</td>
+        </tr>
+        <tr>
+            <th>Mass of water = (m3-m2)g</th>
+            <td><input id="result_m3_m2_1" readonly type="number"> g</td>
+            <td><input id="result_m3_m2_2" readonly type="number"> g</td>
+            <td><input id="result_m3_m2_3" readonly type="number"> g</td>
+        </tr>
+        
+        <tr>
+            <th>Specific Gravity (G)</th>
+            <td><input id="result_division_1" readonly type="number"> </td>
+            <td><input id="result_division_2" readonly type="number"></td>
+            <td><input id="result_division_3" readonly type="number"> </td>
+        </tr>
+    </table>
+
+    <button type="button" onclick="calculateAllEquations()" class="specific-button">
+        <span class="specific-button__text">Calculate</span>
+        <span class="specific-button__icon">
+            <ion-icon name="calculator-outline"></ion-icon>
+        </span>
+    </button>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <div>
+        <table class="specific-results-table" table border="2px">
+            <tr>
+                <th><label for="average_result_1">Result:</label></th>
+                <td>
+                    <p>The Specific gravity of the coarse grained soil is</p>
+                    <input type="text" id="average_result_1" readonly> 
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function calculateAllEquations() {
+    calculateEquations(1);
+    calculateEquations(2);
+    calculateEquations(3);
+    
+
+    const averageResult = calculateAverageResult();
+    document.getElementById(`average_result_1`).value = averageResult;
+}
+function calculateEquations(trialNumber) {
+    const m1 = parseFloat(document.getElementById(`m1_${trialNumber}`).value);
+    const m2 = parseFloat(document.getElementById(`m2_${trialNumber}`).value);
+    const m3 = parseFloat(document.getElementById(`m3_${trialNumber}`).value);
+    const m4 = parseFloat(document.getElementById(`m4_${trialNumber}`).value);
+   
+    if (isNaN(m1) || isNaN(m2) || isNaN(m3)) {
+        alert(`Trial ${trialNumber}: Please enter valid numeric values for m1, m2, and m3.`);
+        return;
+    }
+
+    const result_m2_m1 = m2 - m1;
+    const result_m4_m1 = m4 - m1;
+    const result_m3_m2 = m3 - m2;
+    
+    const result_division = ((m2 - m1) * 1) / ((m4 - m1) - result_m3_m2);
+
+    document.getElementById(`result_m2_m1_${trialNumber}`).value = result_m2_m1.toFixed(2);
+    document.getElementById(`result_m3_m2_${trialNumber}`).value = result_m3_m2.toFixed(2);
+    document.getElementById(`result_m4_m1_${trialNumber}`).value = result_m4_m1.toFixed(2);
+    document.getElementById(`result_division_${trialNumber}`).value = result_division.toFixed(2);
+}
+
+function calculateAverageResult() {
+    const result_1 = parseFloat(document.getElementById(`result_division_1`).value);
+    const result_2 = parseFloat(document.getElementById(`result_division_2`).value);
+    const result_3 = parseFloat(document.getElementById(`result_division_3`).value);
+
+    const averageResult = (result_1 + result_2 + result_3) / 3;
+
+    return isNaN(averageResult) ? '' : averageResult.toFixed(2);
+}
+    </script>
+</body>
+</html>
