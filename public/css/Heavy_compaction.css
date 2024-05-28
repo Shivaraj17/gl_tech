@@ -1,0 +1,196 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.specific-body{
+    background-image: url(https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.specific-btn{
+    margin-left: -250px;
+}
+.specific-btn:hover{
+    cursor: pointer;
+    background: #6ed3f1;
+
+}
+
+.specific-btn{
+    margin-left: -700px;
+    align-items: center;
+    border-width: 2px;
+    font-size: large;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: #a5e5f8;
+    font-weight: 50;
+}
+.specific-title{
+    text-align: center;
+}
+.specific-watercntvt{
+    margin-left: 490px;
+}
+.specific-header{
+    margin-top: 55px;
+    font-size: xx-large;
+}
+.specific-content-table{
+    border-collapse: collapse;
+    font-size: 1.2em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    margin: auto;
+    margin-top: 20px;
+}
+.specific-content-table  tr th{
+    background-color: #000000;
+    color: #e4e4e4;
+    text-align: left;
+    font-weight: bold;
+}
+.specific-content-table th,.specific-content-table td{
+    padding: 20px 20px;
+}
+.specific-content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.specific-content-table tbody tr:nth-of-type(even){
+    background-color: #e9e7e7;
+}
+.specific-content-table tbody tr:nth-of-type(odd){
+    background-color: #dbd9d9;
+}
+.specific-content-table tbody tr:last-of-type{
+    border-bottom: 5px solid #009879;
+
+}.specific-content{
+    border-width: 500px;
+    border-bottom: 500px;
+    
+}
+.specific-button{
+    display: inline-flex;
+    margin-left: 680px;
+    margin-top: 10px;
+    height: 50px;
+    padding: 0;
+    background: #000000;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.specific-button:hover{
+    background: #343535;
+}
+.specific-button:active{
+    background: #000000;
+    
+}
+.specific-button__text,.specific-button__icon{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #e4dede;
+    height: 100%;
+    
+}
+.specific-button__icon{
+    font-size: 1.5em;
+    background: rgba(0,0,0,0.08);
+    
+}
+.specific-accordion{
+    margin: 60px auto;
+    width: 600px;
+}
+.specific-accordion li{
+    list-style: none;
+    width: 150%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #e2edf7;
+    box-shadow:  6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    margin-left: -150px;
+}
+.specific-accordion li label{
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   font-size: 18px;
+   font-weight: 500;
+   cursor: pointer;
+}
+.specific-watercntvt{
+    margin-left: 500px
+}
+label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.specific-accordion .specific-content{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+
+}
+.specific-accordion input[type="checkbox"]:checked+label+.specific-content{
+  max-height: 400px;
+  padding: 10 px 10px 20px;  
+}
+.specific-content-table{
+    text-align: center;
+}
+#table{
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+.specific-results-table{
+    margin: auto;
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+.specific-results-table tr th{
+    background-color: #000000;
+    color: #e4e4e4;
+    text-align: left;
+    font-weight: bold;
+}.specific-results-table th,.specific-results-table td{
+    padding: 12px 15px;
+}
+.specific-results-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+    
+}
+.specific-results-table tbody tr:nth-of-type(even){
+    background-color: #e9e7e7;
+}
+.specific-results-table tbody tr:nth-of-type(odd){
+    background-color: #dbd9d9;
+}
+.specific-results-table tbody tr:last-of-type{
+    border-bottom: 5px solid #000000;
+
+}
+.observation-of-core{
+    text-align: center;
+    font-size: 50px;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varying head method</title>
+    <link rel="stylesheet" href="../css/Varying_head.css">
+    <link rel="stylesheet" href="../css/mediaExperiments.css">
+</head>
+<body class="specific-body">
+    <header class="specific-header">
+        <button type="button" class="specific-btn"><a href="Experiments list.html">Experiments</a></button>
+        <div class="specific-title"><i><u><h2>COEFFICIENT OF PERMEABILITY USING VARYING HEAD PERMEAMETER</h2></u></i></div>
+    </header>
+    <ul class="specific-accordion">
+        <li>
+            <input type="checkbox" name="accordion" id="first_1">
+            <label for="first_1">Aim</label>
+            <div class="specific-content">
+                <p> To determine the permeability of the given soil sample by using varying head permeameter.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="second_1">
+            <label for="second_1">Apparatus</label>
+            <div class="specific-content">
+                <p> 1. Permeameter<br>
+
+                    2. Compaction equipment<br>
+                    
+                    3. Drainage bank<br>
+                    
+                    4. Set of stand pipes<br>
+                    
+                    5. IS sieve, mixing pan, graduated cylinder, stopwatch, 75 micron wire gauze, thermometer, etc.
+                    </p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="third_1">
+            <label for="third_1">Objective</label>
+            <div class="specific-content">
+                <p>Laboratory determination of coefficient of permeability of soils using falling head method. This test is recommended for soils with coefficient of permeability in the range of 10 to 107 cm per second.</p>
+            </div>
+        </li>
+        
+        <li>
+            <input type="checkbox" name="accordion" id="fifth_1">
+            <label for="fifth_1">Procedure</label>
+            <div class="specific-content">
+                <p> Preparation of test specimen (disturbed soil sample)<br><br>
+
+                
+                    
+                    1. Take thoroughly mixed air dried or oven dried soil about 2.5 kgs.<br>
+                    
+                    2. Determine the moisture content of the soil sample, the sample shall be placed in air tight container. The quantity of water to be added to the stored sample shall be computer and spread evenly over the sample, after thoroughly mixing the material. The material is again stored in the storage container. The moisture content of the sample is again determined and the entire process is repeated till the moisture content is 0.5% of that desired.<br>
+                    
+                    3. The permeameter should be weighed to the nearest gram. It is clamped between the compaction base plate and the extension collar.<br>
+                    
+                    4. The mould with specimen is weighed and then assembled to the draingage base.<br>
+                    
+                    5. The specimen is connected to the top inlet of the selected stand pipe.<br>
+                    
+                    6. The bottom outlet shall be opened and the time interval required for water level to fall from initial head hl to final head h2 as read above the center of the outlet is recorded.<br>
+                    
+                    7. The stand pipe is refilled with water and the test repeated, till three successive observations give the same time interval.<br>
+                    
+                    8. The time intervals are recorded for drop in head from the same initial to final
+                    
+                    values as in the first determination.<br>
+                    
+                    9. Alternatively after selecting suitable initial and final head hl and h2, time intervals shall be noted for the head fall from hl to h2.</p>
+            </div>
+        </li>
+       
+    </ul>
+   <br><br><br><br>
+    <div>
+        <table id="table_1" class="specific-content-table" table border="5px">
+        <h1 class="observation-of-core">Observation and Tabulation</h1>
+        <div class="observation-data">
+           <tr>
+            <th>Mass of Empty mould = W1 =</th>
+             <td><input type="number"  id="w1_1"> kg</td> 
+            </tr>
+
+            <tr>
+                <th>Mass of Empty mould + soil = W2 =</th>
+                  <td><input type="number"  id="w2_1"> kg</td>
+                </tr>
+            <tr> 
+                <th>Mass of soil = W2-W1 =</th>
+                 <td><input   id="w3_1"readonly type="number"> kg</td>
+                </tr>
+                <tr> 
+                    <th>Length of the mould = l</th> 
+                    <td><input type="number"  id="l1_1"> cm</td>
+                </tr>
+                    <tr>
+                         <th>Diameter of the mould = D =</th> 
+                         <td> <input type="number"  id="Diameter"> cm 
+                        </tr>
+                        <tr> 
+                            <th>Area of the mould = A =</th>
+                             <td><input id="Area" readonly type="number"  > cm2</td>
+                            </tr>
+                        <tr> 
+                             <th>Volume of the mould = V =</th>
+                            <td> <input   id="volume"readonly type="number"> cm3</td>
+                            </tr>
+                            <tr>
+                                  <th>Bulk density = μB =</th>
+                                  <td><input   id="bulk_density"readonly type="number"> g/cm3</td>
+            </tr> 
+            <tr>
+                <th>Diameter of the standpipe = d =</th> 
+                <td> <input type="number"  id="diameter"> cm
+               </tr>
+               <tr> 
+                   <th>Area of the standpipe = a =</th>
+                    <td><input id="area" readonly type="number"  > cm2</td>
+                   </tr></div>
+    <table id="table_1" class="specific-content-table" table border="5px">
+        <tr>
+            <th>Description</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>Time taken in sec (t) </th>
+            <td><input id="t1_1" type="number"> sec</td>
+            <td><input id="t1_2" type="number"> sec</td>
+            <td><input id="t1_3" type="number"> sec</td>
+        </tr>
+        <tr>
+            <th>Initial head in cm (h1) </th>
+            <td><input id="h1_1" type="number"> cm</td>
+            <td><input id="h1_2" type="number"> cm</td>
+            <td><input id="h1_3" type="number"> cm</td>
+        </tr>
+        <tr>
+            <th>Final head in cm (h2)</th>
+            <td><input id="h2_1" type="number"> cm</td>
+            <td><input id="h2_2" type="number"> cm</td>
+            <td><input id="h2_3" type="number"> cm</td>
+        </tr>
+        <tr>
+            <th>Log10 (h1/h2) in cm/s</th>
+            <td><input id="result_log1_1" readonly type="number"> cm/s</td>
+            <td><input id="result_log1_2" readonly type="number"> cm/s</td>
+            <td><input id="result_log1_3" readonly type="number"> cm/s</td>
+        </tr>
+        <tr>
+            <th>K = [ 2.3Log(h1/h2) x a x 1 ]/ (A x t )</th>
+            <td><input id="result_k1_1" readonly type="number"> cm/s</td>
+            <td><input id="result_k1_2" readonly type="number"> cm/s</td>
+            <td><input id="result_k1_3" readonly type="number"> cm/s</td>
+        </tr>
+        
+        
+    </table>
+
+    <button type="button" onclick="calculateAllEquations()" class="specific-button">
+        <span class="specific-button__text">Calculate</span>
+        <span class="specific-button__icon">
+            <ion-icon name="calculator-outline"></ion-icon>
+        </span>
+    </button>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <div>
+        <table class="specific-results-table" table border="2px">
+            <tr>
+                <th><label for="average_result_1">Result:</label></th>
+                <td>
+                    <p>Varying head permeability of soil is =</p>
+                    <input type="text" id="average_result_1" readonly> cm/s 
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+          function calculateAllEquations() {
+            calculateBulkDensity();
+            calculatePermeability(1);
+            calculatePermeability(2);
+            calculatePermeability(3);
+
+            const averageResult = calculateAverageResult();
+            document.getElementById('average_result_1').value = averageResult;
+        }
+
+        function calculateBulkDensity() {
+            const w1 = parseFloat(document.getElementById('w1_1').value);
+            const w2 = parseFloat(document.getElementById('w2_1').value);
+            const w3 = parseFloat(document.getElementById('w3_1').value);
+            const D1 = parseFloat(document.getElementById('Diameter').value);
+            const l1 = parseFloat(document.getElementById('l1_1').value);
+            const d1 = parseFloat(document.getElementById('diameter').value);
+            const mass = w2-w1;
+            const Area = (3.142 * D1 * D1) / 4;
+            const volume = (3.142 * D1 * D1 * l1) / 4;
+            const area = (3.142 * d1 * d1) / 4;
+            const bulk_density = (mass*1000) / volume;
+            document.getElementById('w3_1').value = mass.toFixed(4);
+            document.getElementById('Area').value = Area.toFixed(4);
+            document.getElementById('area').value = area.toFixed(4);
+            document.getElementById('volume').value = volume.toFixed(4);
+            document.getElementById('bulk_density').value = bulk_density.toFixed(4);
+        }
+
+        function calculatePermeability(trialNumber) {
+            const t = parseFloat(document.getElementById(`t1_${trialNumber}`).value);
+            const h1 = parseFloat(document.getElementById(`h1_${trialNumber}`).value);
+            const h2 = parseFloat(document.getElementById(`h2_${trialNumber}`).value);
+            const result_log1 = Math.log10(h1/h2);
+            const Area = parseFloat(document.getElementById(`Area`).value);
+            const area = parseFloat(document.getElementById(`area`).value);
+            const length = parseFloat(document.getElementById(`l1_1`).value);
+            const result_k1 = (2.3 * Math.log(h1/h2) * area * length) / (Area * t);
+
+            document.getElementById(`result_log1_${trialNumber}`).value = result_log1.toFixed(3);
+            document.getElementById(`result_k1_${trialNumber}`).value = result_k1.toFixed(5);
+        }
+
+        function calculateAverageResult() {
+            const result_1 = parseFloat(document.getElementById(`result_k1_1`).value);
+            const result_2 = parseFloat(document.getElementById(`result_k1_2`).value);
+            const result_3 = parseFloat(document.getElementById(`result_k1_3`).value);
+            const averageResult = (result_1 + result_2 + result_3) / 3;
+
+            return isNaN(averageResult) ? '' : averageResult.toFixed(5);
+        }
+    </script>
+</body>
+</html>
